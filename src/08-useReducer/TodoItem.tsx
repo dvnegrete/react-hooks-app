@@ -5,7 +5,7 @@ export const TodoItem = (
             todo, 
             onDeleteTodo, 
             onToogleTodo 
-        } : { 
+        } : {
             todo:TodoInterface, 
             onToogleTodo: React.FC, 
             onDeleteTodo: React.FC
@@ -17,6 +17,7 @@ export const TodoItem = (
                 <span 
                     className={`align-self-center todoLi${ todo.done ? ' text-decoration-line-through' : ''}`}
                     onClick={ ()=> onToogleTodo(todo.id)}
+                    aria-label="span"
                 >
                     { todo.description }
                 </span>
