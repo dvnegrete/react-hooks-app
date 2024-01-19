@@ -9,3 +9,7 @@ button {
 .todoLi {
   cursor: pointer;
 }
+
+a {
+  margin-right: 5px;
+}
